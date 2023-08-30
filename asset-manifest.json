@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/little-lemon-resturant/static/css/main.dfa3218a.css",
+    "main.js": "/little-lemon-resturant/static/js/main.04b4981f.js",
+    "static/js/787.74cbec52.chunk.js": "/little-lemon-resturant/static/js/787.74cbec52.chunk.js",
+    "static/media/restauranfood.jpg": "/little-lemon-resturant/static/media/restauranfood.e8abf5b772b6817189aa.jpg",
+    "static/media/image2.jpg": "/little-lemon-resturant/static/media/image2.efdac52e48170ba24d9a.jpg",
+    "static/media/image1.jpg": "/little-lemon-resturant/static/media/image1.8a410d9e35a1409897c9.jpg",
+    "static/media/men1.jpg": "/little-lemon-resturant/static/media/men1.671d5af174f2334b8ac8.jpg",
+    "static/media/women.jpg": "/little-lemon-resturant/static/media/women.ccdcea01362423e8e2bf.jpg",
+    "static/media/women black.jpg": "/little-lemon-resturant/static/media/women black.ba5a7f9f30d58ab385d9.jpg",
+    "static/media/men2.jpg": "/little-lemon-resturant/static/media/men2.333854849cb34643a28e.jpg",
+    "static/media/logo.jpg": "/little-lemon-resturant/static/media/logo.e68246686f716ff6e5d8.jpg",
+    "static/media/logo mini.jpg": "/little-lemon-resturant/static/media/logo mini.beb4af268b2549af1a42.jpg",
+    "index.html": "/little-lemon-resturant/index.html",
+    "main.dfa3218a.css.map": "/little-lemon-resturant/static/css/main.dfa3218a.css.map",
+    "main.04b4981f.js.map": "/little-lemon-resturant/static/js/main.04b4981f.js.map",
+    "787.74cbec52.chunk.js.map": "/little-lemon-resturant/static/js/787.74cbec52.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dfa3218a.css",
+    "static/js/main.04b4981f.js"
+  ]
+}
