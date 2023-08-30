@@ -1,38 +1,251 @@
-.App {
-  text-align: center;
+
+.links :hover{
+  cursor: pointer;
+}
+.links{
+  padding:1%;
+}
+.banner-header {
+  background-color: #495e57;
+  padding: 40px 0;
+}
+.banner-section{
+color: #EDEFEE;
+/*padding: 10px 13%; */
+position: relative;
+display: flex;
+justify-content: space-evenly;
+}
+.div1{
+  margin-right: 5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2 {
+  color: #F4CE14;
+  font-size: 40px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h3 {
+  font-size: 25px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.banner-section p {
+  margin-right: 5px;
+  font-size: 20px;
+  max-width: 520px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+.banner-section img{
+  
+  right: 13%;
+  top: 15%;
+  height: 500px;
+  border-radius: 15px;
+}
+.res-button{
+  background-color: #F4CE14;
+color: black;
+border: none;
+font-weight:bold;
+font-size:20px;
+padding: 14px 18px;
+border-radius: 20px;
+}
+.menu-container ,.test-container,.about-container,.footer-container,.navsection,.Res-container,.website{
+/*top bottom 40 right left0*/
+padding-top: 1rem;
+padding-bottom: 1rem;
+margin-left: 28vb;
+margin-right: 28vh;
+}
+.menu-div1-text{
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+}
+.menu-div1-text h2,.test-container h2{
+  color: black;
+  font-family: 'Makazi Text';
+  font-weight: 500;
+  font-style: normal;
+}
+.menu-div1-text button{
+  background-color: #F4CE14;
+  border: none;
+  font-weight:bold;
+  border-radius: 20px;
+  font-size: 20px;
+  color: black;  
+  padding: 14px 18px;
+}
+
+.menu-div2-card ,.test-container-div,.footer-div,.navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+ flex-wrap: wrap;
+  margin-top: 30px;
+}
+.card-div{
+width:min-content;
+  border-radius: 5%;
+  background-color: #EDEDED;
+margin-top: 1%;
+margin-bottom: 1%;
+}
+.card-img{
+ height: 233px;
+ border-top-left-radius: 20px;
+ border-top-right-radius: 20px;
+}
+.card-heading{
+  display: flex;
+  justify-content: space-between;
+
+}
+.card-title{
+  margin-left: 10px;
+}
+.card-price{
+  margin-right: 10px;
+}
+.card-description{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.card-button{
+  background-color: #F4CE14;
+  border: none;
+  font-weight:bold;
+  border-radius: 20px;
+  font-size: 15px;
+  color: black;  
+  padding: 7px 9px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.test-container h2{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+}
+.test-card{
+width:min-content;
+border-radius: 10px;
+background-color: #EDEDED;
+padding: 1%;
+margin-top: 1%;
+margin-bottom: 1%;
+}
+.test-img-name{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: max-content;
+}
+.test-name,.test-img {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.test-img {
+border-radius: 50%;
+}
+.test-name{
+  font-weight:500;
+}
+.test-description ,.card-description{
+  font-style: normal;
+  font-weight: 400;
+  text-align: justify;
+  color: #495e57;
+}
+.about-container{
+  display:flex;
+  justify-content: space-between;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.about-container p{
+  text-align: justify;
+  margin-right: 1%;
 }
 
-.App-link {
-  color: #61dafb;
+.about-img-parent{
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-left: 1%;
 }
+.about-container img{
+  height: 400px;
+}
+.image1{
+position: relative;
+top: 0;
+left: 0;
+}
+.image2{
+  position: absolute;
+  top: 10%;
+  left: 60%;
+  }
+/*
+  .navbar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+    color: black;
+    text-decoration: none;
+  }*/
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+  form{
+    display: flex;
+    justify-content: center;
   }
-  to {
-    transform: rotate(360deg);
+  fieldset{
+    border-radius: 10px;
+    border-color: #495e57;
+    display: flex;
+    flex-direction: column;
   }
-}
+  fieldset div{
+    display: flex;
+    
+  }
+  fieldset div,input{
+    margin: 1%;
+  }
+  fieldset div label{
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .res-btn{
+    background-color: #F4CE14;
+    border: none;
+    font-weight:bold;
+    border-radius: 20px;
+    font-size: 15px;
+    color: black;  
+    padding: 7px 9px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+  .website{
+    display: flex;
+    justify-content: center;
+   
+    align-items: center;
+    border:solid #495e57;
+ 
+   border-radius: 20px;
+    padding: 1%;
+  }
+  
+  .website h2{
+    font-size: 30px;
+  }
