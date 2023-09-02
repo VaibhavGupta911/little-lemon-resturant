@@ -215,12 +215,11 @@ left: 0;
   }
   fieldset div{
     display: flex;
-    
   }
   fieldset div,input{
     margin: 1%;
   }
-  fieldset div label{
+  fieldset div label,.error-message{
     margin-right: 10px;
     margin-left: 10px;
   }
@@ -248,4 +247,8 @@ left: 0;
   
   .website h2{
     font-size: 30px;
+  }
+  .error-message{
+    color: red;
+    font-size:small;
   }

@@ -1,39 +1,125 @@
 import React from "react"
 import { useFormik } from "formik"
-
+import { signUpSchema } from "../schemas";
 export default function Reservation() {
-    const validate = values => {
-        const errors = {};
-        if (!values.email) {
-            errors.email = 'Required';
-        } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
-            errors.email = 'Invalid email address';
-        }
-
-        return errors;
+    const initialValues = {
+        name: "",
+        email: "",
+        date: "",
+        guest: "",
+        occasion: "",
+        time: "",
     };
 
-    const formik = useFormik({
-        initialValues: {
-            email: '',
-        },
-        validate, onSubmit: values => {
-            alert("Table is Reserved");
-        },
-    })
+    {/* password: "",
+        confirm_password: "", */}
 
+    {/*formik can also be used
+ but then formik.valee.name should be used*/}
+    const { values, errors, touched, handleBlur, handleChange, handleSubmit } = useFormik(
+        {
+            initialValues: initialValues,
+            validationSchema: signUpSchema,
+            onSubmit: (values) => {
+                console.log(values);
+                alert("Table booked for "+values.date+" on occasion of "+values.occasion+" for "+values.guest+" guests");
+            }
+
+        }
+
+    );
+    console.log(errors);
     return (
         <section className="Res-container">
             <section>
-                <form  onSubmit={formik.handleSubmit}>
+                <form onSubmit={handleSubmit}>
                     <fieldset >
                         <div>
-                            <label htmlFor="book-date">Choose Date:</label>
-                            <input id="book-date" name="book-date" type='date' required/>
+                            <label htmlFor="name"  >Name</label>
+                            <input
+                                type='name'
+                                autoComplete='off'
+                                name="name"
+                                id="name"
+                                placeholder="Name"
+                                value={values.name}
+                                onChange={handleChange}
+                                onBlur={handleBlur}
+                            />
+                        </div>
+                        <div>
+                            {errors.name && touched.name ? (<p className="error-message">{errors.name}</p>) : null}
+                        </div>
+                        <div>
+                            <label htmlFor="email">Email</label>
+                            <input
+                                name="email"
+                                id="email"
+                                type='email'
+                                autoComplete="off"
+                                placeholder="Email"
+                                value={values.email}
+                                onChange={handleChange}
+                                onBlur={handleBlur}
+                            />
+                        </div>
+                        <div>
+                            {errors.email && touched.email ? (<p className="error-message">{errors.email}</p>) : null}
+                        </div>
+                        {/*
+                        <div>
+                            <label htmlFor="password">Password</label>
+                            <input
+                                name="password"
+                                id="password"
+                                type='password'
+                                autoComplete='off'
+                                placeholder="Password"
+                                value={values.password}
+                                onChange={handleChange}
+                                onBlur={handleBlur}
+                            />
+                        </div>
+                        <div>
+                            {errors.password && touched.password ? (<p className="error-message">{errors.password}</p>) : null}
+                        </div>
+                        <div>
+                            <label htmlFor="confirm_password">Confirm Password</label>
+                            <input
+                                name="confirm_password"
+                                id="confirm_password"
+                                type='password'
+                                autoComplete='off'
+                                placeholder="Confirm Password"
+                                value={values.confirm_password}
+                                onChange={handleChange}
+                                onBlur={handleBlur}
+                            />
+                        </div>
+                        <div>
+                            {errors.confirm_password && touched.confirm_password ? (<p className="error-message">{errors.confirm_password}</p>) : null}
+                        </div>
+                        */}
+                        <div>
+                            <label htmlFor="date">Choose Date:</label>
+                            <input
+                                id="date" name="date"
+                                type='date'
+                                value={values.date}
+                                onChange={handleChange}
+                            />
+                        </div>
+                        <div>
+                            {errors.date && touched.date ? (<p className="error-message">{errors.date}</p>) : null}
+
                         </div>
                         <div>
                             <label htmlFor="book-time">Choose Time:</label>
-                            <select id="book-time">
+                            <select id="book-time" name="time"
+                                value={values.time} onChange={handleChange}
+                                onBlur={handleBlur}
+                            >
+                                <option></option>
                                 <option>17:00</option>
                                 <option>18:00</option>
                                 <option>19:00</option>
@@ -41,30 +127,43 @@ export default function Reservation() {
                                 <option>21:00</option>
                             </select>
                         </div>
-                        
+                        <div>
+                            {errors.time && touched.time ? (<p className="error-message">{errors.time}</p>) : null}
+                        </div>
                         <div>
                             <label htmlFor="book-guests">Number of Guest:</label>
-                            <input id="book-guests" type="number" placeholder="Enter number of Guest" min='1' max='10' required />
-
+                            <input
+                                id="book-guests"
+                                type="number"
+                                name="guest"
+                                placeholder="Enter number of Guest" min='1' max='10'
+                                value={values.guest}
+                                onChange={handleChange}
+                                onBlur={handleBlur}
+                            />
+                        </div>
+                        <div>
+                            {errors.guest && touched.guest ? (<p className="error-message">{errors.guest}</p>) : null}
                         </div>
                         <div>
                             <label htmlFor="book-occasion">Select Occasion:</label>
-                            <select id="book-occasion" required>
+                            <select id="book-occasion" name="occasion"
+                                value={values.occasion} onChange={handleChange}>
+                                <option></option>
                                 <option>Birthday</option>
                                 <option>Anniversary</option>
                             </select>
                         </div>
                         <div>
-                            <label htmlFor="email">Email Address</label>
-                            <input
-                                id="email"
-                                name="email"
-                                type="email"
-                                onChange={formik.handleChange}
-                                value={formik.values.email}
-                            />
+                            {errors.occasion && touched.occasion ? (<p className="error-message">{errors.occasion}</p>) : null}
                         </div>
-                            <input className="res-btn" type='submit' aria-label='On Click' value={"Make Reservation"} />
+                        <button
+                            className="res-btn"
+                            type='submit'
+                            aria-label='On Click'
+                        >
+                            Reservation
+                        </button>
                     </fieldset>
                 </form>
             </section>
