@@ -212,14 +212,16 @@ left: 0;
     border-color: #495e57;
     display: flex;
     flex-direction: column;
+    
   }
   fieldset div{
     display: flex;
+    flex-direction: row;
   }
   fieldset div,input{
     margin: 1%;
   }
-  fieldset div label,.error-message{
+  fieldset div label,.error-message,.res-form-h2{
     margin-right: 10px;
     margin-left: 10px;
   }
@@ -251,4 +253,7 @@ left: 0;
   .error-message{
     color: red;
     font-size:small;
+  }
+  .res-form-h2{
+    font-size: medium;
   }

@@ -9,7 +9,6 @@ import OnlineOrder from "./OnlineOrder";
 import Login from "./Login";
 export default function Nav() {
     const linkstyle = { textDecoration: 'none', color: 'black' }
-
     return (
         <>
             <section className="navsection">
@@ -25,21 +24,15 @@ export default function Nav() {
                 </nav>
             </section>
             <Routes>
+                <Route exact path='/little-lemon-resturant' element={<Home/>}></Route>
                 <Route exact path='/' element={<Home />} ></Route>
                 <Route exact path='/About' element={< About />}></Route>
                 <Route exact path='/Menu' element={<Menu />}></Route>
                 <Route exact path='/Reservation' element={< Reservation />}></Route>
-                
-          <Route exact path='/OnlineOrder' element={< OnlineOrder />}></Route>
-          <Route exact path='/Login' element={< Login />}></Route>
+                <Route exact path='/OnlineOrder' element={< OnlineOrder />}></Route>
+                <Route exact path='/Login' element={< Login />}></Route>
+
             </Routes>
-            { /* 
-         
-         
-        
-   */}
-
         </>
-
     )
 }

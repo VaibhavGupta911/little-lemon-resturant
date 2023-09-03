@@ -35,6 +35,9 @@ export default function Reservation() {
                 <form onSubmit={handleSubmit}>
                     <fieldset >
                         <div>
+                            <h2 className="res-form-h2">Register Your Self</h2>
+                        </div>
+                        <div>
                             <label htmlFor="name"  >Name</label>
                             <input
                                 type='name'
