@@ -2,6 +2,14 @@ import React from "react"
 import { useFormik } from "formik"
 import { signUpSchema } from "../schemas";
 export default function Reservation() {
+
+    {/*
+ const [check,setCheck]= useState(false);
+   const handlecheck=()=>{
+    setCheck(!check)
+   }
+*/}
+
     const initialValues = {
         name: "",
         email: "",
@@ -10,9 +18,9 @@ export default function Reservation() {
         occasion: "",
         time: "",
     };
-
     {/* password: "",
         confirm_password: "", */}
+
 
     {/*formik can also be used
  but then formik.valee.name should be used*/}
@@ -22,7 +30,7 @@ export default function Reservation() {
             validationSchema: signUpSchema,
             onSubmit: (values) => {
                 console.log(values);
-                alert("Table booked for "+values.date+" on occasion of "+values.occasion+" for "+values.guest+" guests");
+                alert("Table booked for " + values.date + " on occasion of " + values.occasion + " for " + values.guest + " guests");
             }
 
         }
@@ -114,7 +122,6 @@ export default function Reservation() {
                         </div>
                         <div>
                             {errors.date && touched.date ? (<p className="error-message">{errors.date}</p>) : null}
-
                         </div>
                         <div>
                             <label htmlFor="book-time">Choose Time:</label>
@@ -169,6 +176,14 @@ export default function Reservation() {
                         </button>
                     </fieldset>
                 </form>
+
+                {/*
+           
+            <input id="check1" name="check1" type='checkbox' onClick={handlecheck} />
+                <label htmlFor="check1">Hide / Unhide</label>
+                {check?(<button>Delete Button</button>):null}
+           
+           */}
             </section>
         </section>
     )

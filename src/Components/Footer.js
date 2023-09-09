@@ -20,18 +20,19 @@ export default function Footer() {
                     <div className="links"><Link style={linkstyle} to="./Login">Login</Link></div>
                 </div>
                 <div>
-                    <h5>COME VISIT US</h5>
-                    <div className="links">
-                <Link style={linkstyle} to="https://goo.gl/maps/y1Z6fZfsgE5xi9PX6">3475 US-9, Freehold, NJ 07728,USA</Link></div>
-                    <div className="links">+17327610900</div>
-                    <div className="links">little.lemon@gmail.com</div>
-                </div>
-                <div>
                     <h5>FOLLOW US</h5>
                     <div className="links"> <Link style={linkstyle} to="https://www.facebook.com/">Facebook</Link> </div>
                     <div className="links"> <Link style={linkstyle} to="https://www.instagram.com/">Instagram</Link></div>
                     <div className="links"><Link style={linkstyle} to="https://twitter.com/">Twitter</Link></div>
                 </div>
+                <div>
+                    <h5>COME VISIT US</h5>
+                    <div className="links">
+                        <Link style={linkstyle} to="https://goo.gl/maps/y1Z6fZfsgE5xi9PX6">3475 US-9, Freehold, NJ 07728,USA</Link></div>
+                    <div className="links">+17327610900</div>
+                    <div className="links">little.lemon@gmail.com</div>
+                </div>
+
             </div>
 
         </footer>
