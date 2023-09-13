@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import Resturant from '../Images/restauranfood.jpg'
 export default function Banner() {
     return (
-
         <header className="banner-header">
             <section className="banner-section">
                 <div className="div1">

@@ -12,8 +12,10 @@ export default function About() {
                 </p>
             </div>
             <div className="about-img-parent">
-                         <img src={image1} className="image1" alt="Chef image" />
-                         <img src={image2} className="image2" alt="chef image" />
+                <div><img src={image1} className="image1" alt="Chef image" />
+                </div>
+                <div>  <img src={image2} className="image2" alt="chef image" />
+                </div>
             </div>
         </div>
 
