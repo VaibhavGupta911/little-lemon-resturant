@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/little-lemon-resturant/static/css/main.f86026de.css",
-    "main.js": "/little-lemon-resturant/static/js/main.9a8919cc.js",
+    "main.css": "/little-lemon-resturant/static/css/main.0422acb7.css",
+    "main.js": "/little-lemon-resturant/static/js/main.e49d606a.js",
     "static/js/787.74cbec52.chunk.js": "/little-lemon-resturant/static/js/787.74cbec52.chunk.js",
     "static/media/restauranfood.jpg": "/little-lemon-resturant/static/media/restauranfood.e8abf5b772b6817189aa.jpg",
     "static/media/image2.jpg": "/little-lemon-resturant/static/media/image2.efdac52e48170ba24d9a.jpg",
@@ -13,12 +13,12 @@
     "static/media/logo.jpg": "/little-lemon-resturant/static/media/logo.e68246686f716ff6e5d8.jpg",
     "static/media/logo mini.jpg": "/little-lemon-resturant/static/media/logo mini.beb4af268b2549af1a42.jpg",
     "index.html": "/little-lemon-resturant/index.html",
-    "main.f86026de.css.map": "/little-lemon-resturant/static/css/main.f86026de.css.map",
-    "main.9a8919cc.js.map": "/little-lemon-resturant/static/js/main.9a8919cc.js.map",
+    "main.0422acb7.css.map": "/little-lemon-resturant/static/css/main.0422acb7.css.map",
+    "main.e49d606a.js.map": "/little-lemon-resturant/static/js/main.e49d606a.js.map",
     "787.74cbec52.chunk.js.map": "/little-lemon-resturant/static/js/787.74cbec52.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f86026de.css",
-    "static/js/main.9a8919cc.js"
+    "static/css/main.0422acb7.css",
+    "static/js/main.e49d606a.js"
   ]
 }
